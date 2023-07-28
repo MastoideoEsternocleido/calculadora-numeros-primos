@@ -14,34 +14,7 @@
     </header>
         <h2>Determinar si es primo</h2>
       <p>Esta parte Calcula si es primo o no</p>
-          <script>
-            function esPrimo(numero) {
-              if (numero <= 1) {
-                return false;
-              }
-
-              // Verificar si el número es divisible por algún número del 2 a la raíz cuadrada del número
-              for (let i = 2; i <= Math.sqrt(numero); i++) {
-                if (numero % i === 0) {
-                  return false;
-                }
-              }
-
-              return true;
-            }
-
-            function main() {
-              const numeroIngresado = parseInt(prompt("Ingresa un número:"));
-
-              if (esPrimo(numeroIngresado)) {
-                console.log(numeroIngresado + " es un número primo.");
-              } else {
-                console.log(numeroIngresado + " NO es un número primo.");
-              }
-            }
-
-            main();
-          </script>
+          <script src="Funciones.js"></script>
         <h2>Hallar Primos Anteriores</h2>
       <p>Esta parte me da los primos anteriores</p>
         <h2>Suma de primos anteriores</h2>
